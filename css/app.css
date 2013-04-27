@@ -62,28 +62,29 @@ body {
 
 /* line 19, ../sass/_mode.scss */
 body {
-  background: #f9f9f9;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background-image: -webkit-linear-gradient(left, #f9f9f9, white);
+  background: -moz-linear-gradient(left, #f9f9f9, white);
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
   -ms-touch-action: none; }
 
-/* line 27, ../sass/_mode.scss */
+/* line 28, ../sass/_mode.scss */
 .simone-mode .code, .space-mode .code, .ascii-mode .code, .simone-mode .back, .space-mode .back, .ascii-mode .back {
   background-color: #262626;
   border: 2px solid #393939; }
-/* line 32, ../sass/_mode.scss */
+/* line 33, ../sass/_mode.scss */
 .simone-mode .back, .space-mode .back, .ascii-mode .back {
   background-image: url('../img/shared/close-dark.svg'); }
-/* line 35, ../sass/_mode.scss */
+/* line 36, ../sass/_mode.scss */
 .simone-mode .i, .space-mode .i, .ascii-mode .i {
   background-image: url('../img/shared/i-dark.svg'); }
-/* line 38, ../sass/_mode.scss */
+/* line 39, ../sass/_mode.scss */
 .simone-mode .o, .space-mode .o, .ascii-mode .o {
   background-image: url('../img/shared/o-dark.svg'); }
 
-/* line 42, ../sass/_mode.scss */
+/* line 43, ../sass/_mode.scss */
 .code, .back {
   position: absolute;
   top: 15px;
@@ -98,14 +99,14 @@ body {
   background-color: #fff;
   border: 2px solid #f3f3f3; }
 
-/* line 52, ../sass/_mode.scss */
+/* line 53, ../sass/_mode.scss */
 .code {
   padding: 0 5px 0 10px;
   line-height: 35px;
   left: 15px;
   pointer-events: none; }
 
-/* line 58, ../sass/_mode.scss */
+/* line 59, ../sass/_mode.scss */
 .back {
   right: 15px;
   width: 34px;
@@ -118,7 +119,7 @@ body {
   background-repeat: no-repeat;
   background-image: url('../img/shared/close-light.svg'); }
 
-/* line 67, ../sass/_mode.scss */
+/* line 68, ../sass/_mode.scss */
 .i {
   width: 4px;
   height: 16px;
@@ -130,11 +131,11 @@ body {
   background-repeat: no-repeat;
   margin-right: 5px;
   background-image: url('../img/shared/i-light.svg'); }
-  /* line 75, ../sass/_mode.scss */
+  /* line 76, ../sass/_mode.scss */
   .failure .i, .success .i {
     background-image: url('../img/shared/i-active.svg'); }
 
-/* line 78, ../sass/_mode.scss */
+/* line 79, ../sass/_mode.scss */
 .o {
   width: 16px;
   height: 16px;
@@ -146,11 +147,11 @@ body {
   background-repeat: no-repeat;
   margin-right: 5px;
   background-image: url('../img/shared/o-light.svg'); }
-  /* line 86, ../sass/_mode.scss */
+  /* line 87, ../sass/_mode.scss */
   .failure .o, .success .o {
     background-image: url('../img/shared/o-active.svg'); }
 
-/* line 98, ../sass/_mode.scss */
+/* line 99, ../sass/_mode.scss */
 .simone-mode #simone, .song-mode #instruments {
   bottom: 0;
   left: 0;
@@ -159,14 +160,14 @@ body {
   top: 0;
   width: 100%; }
 
-/* line 107, ../sass/_mode.scss */
+/* line 108, ../sass/_mode.scss */
 canvas {
   position: absolute;
   z-index: 2;
   top: 0;
   left: 0; }
 
-/* line 114, ../sass/_mode.scss */
+/* line 115, ../sass/_mode.scss */
 .reload {
   background-color: rgba(255, 255, 255, 0.8);
   background-image: url('../img/shared/refresh.svg');
@@ -185,7 +186,7 @@ canvas {
   z-index: 3;
   display: none; }
 
-/* line 130, ../sass/_mode.scss */
+/* line 131, ../sass/_mode.scss */
 .bounds {
   background-image: url('../img/shared/slash+13.svg');
   background-position: 50% 50%;
@@ -194,7 +195,7 @@ canvas {
   -moz-background-size: auto 100%;
   -o-background-size: auto 100%;
   background-size: auto 100%; }
-  /* line 136, ../sass/_mode.scss */
+  /* line 137, ../sass/_mode.scss */
   .no-svg .bounds {
     background-image: url('../img/shared/slash+13.png'); }
 
@@ -308,7 +309,7 @@ canvas {
     list-style: none;
     margin: 0;
     padding: 0; }
-    /* line 11, ../../../../../usr/local/opt/rbenv/versions/1.9.3-p362/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+    /* line 11, ../../../../../usr/share/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
     .home-mode #nav-full .nav li,
     .home-mode #nav-full-fallback .nav li {
       list-style-image: none;
@@ -550,7 +551,7 @@ canvas {
       .home-mode #dropdown .item,
       .home-mode #dropdown-fallback .item {
         font-size: 130%;
-        padding: .5em .75em; } }
+        padding: 0.5em 0.75em; } }
 /* line 295, ../sass/_home.scss */
 .home-mode.nav-visible #dropdown, .home-mode.nav-visible #dropdown-fallback {
   display: none; }
@@ -608,7 +609,7 @@ canvas {
         -o-border-radius: 15px;
         border-radius: 15px; }
 
-/* line 154, ../sass/_mode.scss */
+/* line 155, ../sass/_mode.scss */
 .simone-mode {
   background: #2c2c2c;
   color: #fff;
@@ -723,11 +724,11 @@ canvas {
       -moz-background-size: 25px;
       -o-background-size: 25px;
       background-size: 25px; }
-  /* line 162, ../sass/_mode.scss */
+  /* line 163, ../sass/_mode.scss */
   .simone-mode .bounds {
     background-image: none; }
 
-/* line 167, ../sass/_mode.scss */
+/* line 168, ../sass/_mode.scss */
 .song-mode {
   color: #959595;
   font-size: 110%; }
@@ -782,7 +783,7 @@ canvas {
       display: inline-block;
       line-height: 1.5em;
       overflow: visible; }
-      /* line 60, ../../../../../usr/local/opt/rbenv/versions/1.9.3-p362/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+      /* line 60, ../../../../../usr/share/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
       .song-mode #song-styles ul li {
         list-style-image: none;
         list-style-type: none;
@@ -792,13 +793,13 @@ canvas {
         float: left;
         padding-left: 0;
         padding-right: 0; }
-        /* line 48, ../../../../../usr/local/opt/rbenv/versions/1.9.3-p362/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+        /* line 48, ../../../../../usr/share/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
         .song-mode #song-styles ul li:first-child, .song-mode #song-styles ul li.first {
           padding-left: 0; }
-        /* line 49, ../../../../../usr/local/opt/rbenv/versions/1.9.3-p362/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+        /* line 49, ../../../../../usr/share/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
         .song-mode #song-styles ul li:last-child {
           padding-right: 0; }
-        /* line 50, ../../../../../usr/local/opt/rbenv/versions/1.9.3-p362/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+        /* line 50, ../../../../../usr/share/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
         .song-mode #song-styles ul li.last {
           padding-right: 0; }
       /* line 42, ../sass/_song.scss */
@@ -899,14 +900,14 @@ canvas {
   .song-mode.no-touch #song-styles ul li#drumkit .drum-icon:hover {
     background-color: #cfcfcf; }
   @media screen and (max-device-width: 480px) {
-    /* line 167, ../sass/_mode.scss */
+    /* line 168, ../sass/_mode.scss */
     .song-mode {
       font-size: 90%; } }
-  /* line 176, ../sass/_mode.scss */
+  /* line 177, ../sass/_mode.scss */
   .song-mode .bounds {
     background-image: none; }
 
-/* line 181, ../sass/_mode.scss */
+/* line 182, ../sass/_mode.scss */
 .space-mode {
   background: #000; }
   /* line 1, ../sass/_space.scss */
@@ -938,7 +939,7 @@ canvas {
   .synth-mode #waveforms .on path, .synth-mode #waveforms .on polyline, .synth-mode #waveforms .on line {
     stroke: #ffffff; }
 
-/* line 195, ../sass/_mode.scss */
+/* line 196, ../sass/_mode.scss */
 .ascii-mode {
   background: #000;
   color: #fff; }
