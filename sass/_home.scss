@@ -53,6 +53,47 @@
     }
   }
 
+  #logo,
+  #logo-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85px;
+    height: 30px;
+    cursor: pointer;
+    background: image-url('shared/logo-google-fallback.png') no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    .svg & {
+      background-image: image-url('shared/logo-google.svg');
+      @include background-size(85px 30px);
+    }
+  }
+
+  #GDlogo {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 160px;
+    height: 60px;
+    cursor: pointer;
+    background: image-url('shared/logo-GD-fallback.png') no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    .svg & {
+      background-image: image-url('shared/Grid_Dynamics.svg');
+      @include background-size(160px 60px);
+    }
+  }
+
   #menu,
   #menu-fallback {
     display: none;
