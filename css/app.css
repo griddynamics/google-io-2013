@@ -314,10 +314,10 @@ canvas {
 /* line 77, ../sass/_home.scss */
 .home-mode #GDlogo {
   position: absolute;
-  top: -20px;
+  top: -5px;
   right: 0;
-  width: 160px;
-  height: 60px;
+  width: 170px;
+  height: 30px;
   cursor: pointer;
   background: url('../img/shared/logo-GD-fallback.png') no-repeat;
   text-indent: 100%;
@@ -328,10 +328,10 @@ canvas {
   /* line 91, ../sass/_home.scss */
   .svg .home-mode #GDlogo {
     background-image: url('../img/shared/Grid_Dynamics.svg');
-    -webkit-background-size: 160px 60px;
-    -moz-background-size: 160px 60px;
-    -o-background-size: 160px 60px;
-    background-size: 160px 60px; }
+    -webkit-background-size: 170px 30px;
+    -moz-background-size: 170px 30px;
+    -o-background-size: 170px 30px;
+    background-size: 170px 30px; }
 /* line 98, ../sass/_home.scss */
 .home-mode #menu,
 .home-mode #menu-fallback {
