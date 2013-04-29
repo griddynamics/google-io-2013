@@ -76,10 +76,10 @@
 
   #GDlogo {
     position: absolute;
-    top: -20px;
+    top: -5px;
     right: 0;
-    width: 160px;
-    height: 60px;
+    width: 170px;
+    height: 30px;
     cursor: pointer;
     background: image-url('shared/logo-GD-fallback.png') no-repeat;
     text-indent: 100%;
@@ -90,7 +90,7 @@
 
     .svg & {
       background-image: image-url('shared/Grid_Dynamics.svg');
-      @include background-size(160px 60px);
+      @include background-size(170px 30px);
     }
   }
 
