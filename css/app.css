@@ -289,11 +289,55 @@ canvas {
     -o-background-size: 85px 30px;
     background-size: 85px 30px; }
 /* line 57, ../sass/_home.scss */
+.home-mode #logo,
+.home-mode #logo-fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 30px;
+  cursor: pointer;
+  background: url('../img/shared/logo-google-fallback.png') no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+  /* line 71, ../sass/_home.scss */
+  .svg .home-mode #logo, .svg
+  .home-mode #logo-fallback {
+    background-image: url('../img/shared/logo-google.svg');
+    -webkit-background-size: 85px 30px;
+    -moz-background-size: 85px 30px;
+    -o-background-size: 85px 30px;
+    background-size: 85px 30px; }
+/* line 77, ../sass/_home.scss */
+.home-mode #GDlogo {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 160px;
+  height: 60px;
+  cursor: pointer;
+  background: url('../img/shared/logo-GD-fallback.png') no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+  /* line 91, ../sass/_home.scss */
+  .svg .home-mode #GDlogo {
+    background-image: url('../img/shared/Grid_Dynamics.svg');
+    -webkit-background-size: 160px 60px;
+    -moz-background-size: 160px 60px;
+    -o-background-size: 160px 60px;
+    background-size: 160px 60px; }
+/* line 98, ../sass/_home.scss */
 .home-mode #menu,
 .home-mode #menu-fallback {
   display: none;
   opacity: 0; }
-/* line 62, ../sass/_home.scss */
+/* line 103, ../sass/_home.scss */
 .home-mode #nav-full,
 .home-mode #nav-full-fallback {
   position: absolute;
@@ -301,7 +345,7 @@ canvas {
   right: 0;
   height: 30px;
   line-height: 30px; }
-  /* line 69, ../sass/_home.scss */
+  /* line 110, ../sass/_home.scss */
   .home-mode #nav-full .nav,
   .home-mode #nav-full-fallback .nav {
     display: inline;
@@ -315,28 +359,28 @@ canvas {
       list-style-image: none;
       list-style-type: none;
       margin-left: 0; }
-    /* line 75, ../sass/_home.scss */
+    /* line 116, ../sass/_home.scss */
     .home-mode #nav-full .nav a,
     .home-mode #nav-full-fallback .nav a {
       text-decoration: none; }
-    /* line 78, ../sass/_home.scss */
+    /* line 119, ../sass/_home.scss */
     .home-mode #nav-full .nav a, .home-mode #nav-full .nav label,
     .home-mode #nav-full-fallback .nav a,
     .home-mode #nav-full-fallback .nav label {
       color: #464646;
       font-size: 17px; }
-    /* line 82, ../sass/_home.scss */
+    /* line 123, ../sass/_home.scss */
     .home-mode #nav-full .nav .nav-item,
     .home-mode #nav-full-fallback .nav .nav-item {
       display: inline;
       float: left;
       position: relative;
       margin: 0 0 0 30px; }
-      /* line 87, ../sass/_home.scss */
+      /* line 128, ../sass/_home.scss */
       .home-mode #nav-full .nav .nav-item:first-child,
       .home-mode #nav-full-fallback .nav .nav-item:first-child {
         margin-left: 0; }
-    /* line 92, ../sass/_home.scss */
+    /* line 133, ../sass/_home.scss */
     .home-mode #nav-full .nav .has-dropdown label,
     .home-mode #nav-full-fallback .nav .has-dropdown label {
       background: transparent url('../img/shared/dropdown-arrow.png') no-repeat right center;
@@ -344,17 +388,17 @@ canvas {
       display: block;
       margin: 0 0 30px 0;
       padding: 0 21px 0 0; }
-    /* line 100, ../sass/_home.scss */
+    /* line 141, ../sass/_home.scss */
     .no-touch .home-mode #nav-full .nav .has-dropdown:hover label, .touch .home-mode #nav-full .nav .has-dropdown.dropdown-visible label, .no-touch
     .home-mode #nav-full-fallback .nav .has-dropdown:hover label, .touch
     .home-mode #nav-full-fallback .nav .has-dropdown.dropdown-visible label {
       background-image: url('../img/shared/dropdown-arrow-hover.png'); }
-    /* line 105, ../sass/_home.scss */
+    /* line 146, ../sass/_home.scss */
     .no-touch .home-mode #nav-full .nav .has-dropdown:hover .nav-dropdown, .touch .home-mode #nav-full .nav .has-dropdown.dropdown-visible .nav-dropdown, .no-touch
     .home-mode #nav-full-fallback .nav .has-dropdown:hover .nav-dropdown, .touch
     .home-mode #nav-full-fallback .nav .has-dropdown.dropdown-visible .nav-dropdown {
       display: block; }
-    /* line 109, ../sass/_home.scss */
+    /* line 150, ../sass/_home.scss */
     .home-mode #nav-full .nav .nav-dropdown,
     .home-mode #nav-full-fallback .nav .nav-dropdown {
       background: #fff;
@@ -373,21 +417,21 @@ canvas {
       top: 30px;
       right: 0;
       z-index: 10000; }
-      /* line 125, ../sass/_home.scss */
+      /* line 166, ../sass/_home.scss */
       .home-mode #nav-full .nav .nav-dropdown .dropdown-item,
       .home-mode #nav-full-fallback .nav .nav-dropdown .dropdown-item {
         border-bottom: 1px solid #ededed;
         display: block; }
-        /* line 129, ../sass/_home.scss */
+        /* line 170, ../sass/_home.scss */
         .home-mode #nav-full .nav .nav-dropdown .dropdown-item:last-child,
         .home-mode #nav-full-fallback .nav .nav-dropdown .dropdown-item:last-child {
           border-bottom-color: transparent; }
-        /* line 132, ../sass/_home.scss */
+        /* line 173, ../sass/_home.scss */
         .home-mode #nav-full .nav .nav-dropdown .dropdown-item a,
         .home-mode #nav-full-fallback .nav .nav-dropdown .dropdown-item a {
           display: block;
           padding: 8px 15px; }
-/* line 143, ../sass/_home.scss */
+/* line 184, ../sass/_home.scss */
 .home-mode.no-touch #nav-full .nav a:hover, .home-mode.no-touch #nav-full .nav label:hover, .home-mode.no-touch #nav-full-fallback .nav a:hover, .home-mode.no-touch #nav-full-fallback .nav label:hover {
   color: #000;
   -webkit-transition: color 200ms ease-out;
@@ -395,11 +439,11 @@ canvas {
   -o-transition: color 200ms ease-out;
   transition: color 200ms ease-out; }
 @media screen and (max-width: 768px) {
-  /* line 150, ../sass/_home.scss */
+  /* line 191, ../sass/_home.scss */
   .home-mode #nav-full,
   .home-mode #nav-full-fallback {
     display: none; }
-  /* line 154, ../sass/_home.scss */
+  /* line 195, ../sass/_home.scss */
   .home-mode #menu,
   .home-mode #menu-fallback {
     display: block;
@@ -417,11 +461,11 @@ canvas {
     -moz-background-size: 20px 17px;
     -o-background-size: 20px 17px;
     background-size: 20px 17px; }
-    /* line 168, ../sass/_home.scss */
+    /* line 209, ../sass/_home.scss */
     .svg .home-mode #menu, .svg
     .home-mode #menu-fallback {
       background-image: url('../img/shared/menu.svg'); }
-  /* line 174, ../sass/_home.scss */
+  /* line 215, ../sass/_home.scss */
   .home-mode.modal-visible #menu, .home-mode.modal-visible #menu-fallback {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -434,10 +478,10 @@ canvas {
     background-color: #d1d1d1;
     background-image: url('../img/shared/menu-down-fallback.png');
     display: block; }
-    /* line 181, ../sass/_home.scss */
+    /* line 222, ../sass/_home.scss */
     .svg .home-mode.modal-visible #menu, .svg .home-mode.modal-visible #menu-fallback {
       background-image: url('../img/shared/menu-down.svg'); } }
-/* line 187, ../sass/_home.scss */
+/* line 228, ../sass/_home.scss */
 .home-mode #pattern {
   display: none;
   border: 1px solid #393939;
@@ -456,13 +500,13 @@ canvas {
   position: absolute;
   bottom: 5%;
   left: 50%; }
-  /* line 201, ../sass/_home.scss */
+  /* line 242, ../sass/_home.scss */
   .home-mode #pattern.success {
     background: #0AA159; }
-  /* line 204, ../sass/_home.scss */
+  /* line 245, ../sass/_home.scss */
   .home-mode #pattern.failure {
     background: #D64036; }
-/* line 210, ../sass/_home.scss */
+/* line 251, ../sass/_home.scss */
 .home-mode #date,
 .home-mode #date-fallback {
   font-family: 'Open Sans';
@@ -474,7 +518,7 @@ canvas {
   right: 0;
   bottom: 5%;
   text-align: center; }
-  /* line 221, ../sass/_home.scss */
+  /* line 262, ../sass/_home.scss */
   .home-mode #date span,
   .home-mode #date-fallback span {
     display: block;
@@ -482,16 +526,16 @@ canvas {
     color: #acacac;
     margin-top: 11px; }
   @media screen and (max-width: 768px) {
-    /* line 210, ../sass/_home.scss */
+    /* line 251, ../sass/_home.scss */
     .home-mode #date,
     .home-mode #date-fallback {
       font-size: 19px;
       z-index: 100; }
-      /* line 232, ../sass/_home.scss */
+      /* line 273, ../sass/_home.scss */
       .home-mode #date span,
       .home-mode #date-fallback span {
         font-size: 14px; } }
-/* line 239, ../sass/_home.scss */
+/* line 280, ../sass/_home.scss */
 .home-mode #modal,
 .home-mode #modal-fallback {
   position: absolute;
@@ -501,10 +545,10 @@ canvas {
   left: 0;
   z-index: 2000;
   display: none; }
-/* line 248, ../sass/_home.scss */
+/* line 289, ../sass/_home.scss */
 .home-mode.modal-visible #modal, .home-mode.modal-visible #modal-fallback {
   display: block; }
-/* line 252, ../sass/_home.scss */
+/* line 293, ../sass/_home.scss */
 .home-mode #dropdown,
 .home-mode #dropdown-fallback {
   position: absolute;
@@ -521,7 +565,7 @@ canvas {
   min-width: 220px;
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
-  /* line 266, ../sass/_home.scss */
+  /* line 307, ../sass/_home.scss */
   .home-mode #dropdown .item,
   .home-mode #dropdown-fallback .item {
     display: block;
@@ -531,31 +575,31 @@ canvas {
     border-bottom: 1px solid #ededed;
     padding: 15px;
     text-decoration: none; }
-    /* line 274, ../sass/_home.scss */
+    /* line 315, ../sass/_home.scss */
     .home-mode #dropdown .item:last-child,
     .home-mode #dropdown-fallback .item:last-child {
       border-bottom: 0; }
     @media screen and (max-width: 768px) {
-      /* line 266, ../sass/_home.scss */
+      /* line 307, ../sass/_home.scss */
       .home-mode #dropdown .item,
       .home-mode #dropdown-fallback .item {
         font-size: 20px; } }
   @media screen and (max-height: 330px) {
-    /* line 252, ../sass/_home.scss */
+    /* line 293, ../sass/_home.scss */
     .home-mode #dropdown,
     .home-mode #dropdown-fallback {
       max-height: 100%;
       overflow: auto;
       -webkit-overflow-scrolling: touch; }
-      /* line 287, ../sass/_home.scss */
+      /* line 328, ../sass/_home.scss */
       .home-mode #dropdown .item,
       .home-mode #dropdown-fallback .item {
         font-size: 130%;
         padding: 0.5em 0.75em; } }
-/* line 295, ../sass/_home.scss */
+/* line 336, ../sass/_home.scss */
 .home-mode.nav-visible #dropdown, .home-mode.nav-visible #dropdown-fallback {
   display: none; }
-/* line 300, ../sass/_home.scss */
+/* line 341, ../sass/_home.scss */
 .home-mode.no-touch #dropdown .item:hover, .home-mode.no-touch #dropdown-fallback .item:hover {
   color: #000; }
 /* line 1, ../sass/_draw-modes.scss */
