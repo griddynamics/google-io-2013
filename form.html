@@ -7,16 +7,20 @@
 	function fitIO(){
 		document.getElementById('io').style.width=document.getElementById('io_cell').offsetWidth+"px";
         }
+        function redrawForm(){
+                document.getElementById('gform').style.webkitTransform='scale(1)';
+        }
+
     </script>
   </head>
-  <body style="height:100%;margin:0px;" onload="fitIO()" onresize="fitIO()">
+  <body style="height:100%;margin:0px;" onload="fitIO();redrawForm();" onresize="fitIO()">
 <table border="0" width=100% height="100%" marginheight="0" marginwidth="0" style="border-spacing: 0px;">
 <tr valign="top" height="100%" marginheight="0" marginwidth="0">
 <td style="padding:0px" id="io_cell">
 <iframe id="io" src="index.html" style="position: absolute; width: 500px; height: 100%;" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
 </td>
 <td width="705" marginheight="0" marginwidth="0" style="padding:0px">
-<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dGhvN19LVzUyNFNYbWJRTkE2MU4yWGc6MA" style="position: absolute; width: 705px; height: 100%;" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+<iframe id="gform" src="https://docs.google.com/spreadsheet/embeddedform?formkey=dGhvN19LVzUyNFNYbWJRTkE2MU4yWGc6MA" style="position: absolute; width: 705px; height: 100%;" frameborder="0" marginheight="0" marginwidth="0" onmousewheel="redrawForm()">Загрузка...</iframe>
 </td>
 </tr>
 </table>
